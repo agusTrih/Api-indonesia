@@ -13,7 +13,7 @@ function Komunitas(props) {
             {props.provinsi !== undefined &&
                 props.provinsi.map((item) => {
                     return (
-                        <div>
+                        <div key={item.id}>
                             <h1>{item.nama}</h1>
                         </div>
                     );
