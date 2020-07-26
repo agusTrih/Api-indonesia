@@ -8,10 +8,11 @@ const getDataCommunity = (data) => {
 };
 
 const fetchDataCommunity = () => async (dispatch) => {
-    const url = `${process.env.BACKEND}/komunitas`;
+    const url = `https://dev.farizdotid.com/api/daerahindonesia/provinsi`;
 
     const options = {
         method: "GET",
+
         headers: {
             "content-type": "application/json",
         },
