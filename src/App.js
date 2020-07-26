@@ -5,6 +5,7 @@ import reducers from "./redux/reducers";
 import thunk from "redux-thunk";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
+import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import Komunitas from "./pages/Komunitas/Komunitas";
 import Kota from "./pages/Kota/Kota";
