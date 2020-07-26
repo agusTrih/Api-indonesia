@@ -19,7 +19,9 @@ function Kota(props) {
     }, []);
     return (
         <div>
-            <h1 style={{ textAlign: "center" }}>Nama-nama Kabupaten/Kota</h1>
+            <h1 style={{ textAlign: "center", padding: "20px" }}>
+                Nama-nama Kabupaten/Kota
+            </h1>
             <FlexWrap>
                 {props.kota !== undefined &&
                     props.kota.map((item, index) => {
