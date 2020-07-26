@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import "./App.css";
 import Komunitas from "./pages/Komunitas/Komunitas";
+import Kota from "./pages/Kota/Kota";
 
 const store = createStore(reducers, applyMiddleware(thunk));
 
@@ -18,7 +19,9 @@ function App() {
                     <Route exact path="/">
                         <Komunitas />
                     </Route>
-                    <Route exact path="/kota/:id"></Route>
+                    <Route exact path="/kota/:id">
+                        <Kota />
+                    </Route>
                 </Switch>
             </Router>
         </Provider>

@@ -1,5 +1,3 @@
-const { getDataCommunity } = require("./komunitas");
-
 const GET_DATA_KOTA = "GET_DATA_KOTA";
 
 const getDataKota = (data) => {
@@ -10,6 +8,7 @@ const getDataKota = (data) => {
 };
 
 const fetchDataKota = (id) => async (dispatch) => {
+    console.log(id, "apa sih id nya");
     const url = `https://dev.farizdotid.com/api/daerahindonesia/kota?id_provinsi=${id}`;
     const options = {
         method: "GET",
@@ -21,5 +20,7 @@ const fetchDataKota = (id) => async (dispatch) => {
     const result = await response.json();
     console.log(result);
 
-    dispatch(getDataCommunity(result));
+    dispatch(getDataKota(result));
 };
+
+export { GET_DATA_KOTA, getDataKota, fetchDataKota };
