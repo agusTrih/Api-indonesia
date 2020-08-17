@@ -9,6 +9,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import Komunitas from "./pages/Komunitas/Komunitas";
 import Kota from "./pages/Kota/Kota";
+import Kecamatan from "./pages/Kecamatan/Kecamatan";
 
 const store = createStore(reducers, applyMiddleware(thunk));
 
@@ -22,6 +23,9 @@ function App() {
                     </Route>
                     <Route exact path="/kota/:id">
                         <Kota />
+                    </Route>
+                    <Route exact path="/kecamatan/:id">
+                        <Kecamatan />
                     </Route>
                 </Switch>
             </Router>
