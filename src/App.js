@@ -10,6 +10,7 @@ import "./App.css";
 import Komunitas from "./pages/Komunitas/Komunitas";
 import Kota from "./pages/Kota/Kota";
 import Kecamatan from "./pages/Kecamatan/Kecamatan";
+import Kelurahan from "./pages/Kelurahan/Kelurahan";
 
 const store = createStore(reducers, applyMiddleware(thunk));
 
@@ -26,6 +27,9 @@ function App() {
                     </Route>
                     <Route exact path="/kecamatan/:id">
                         <Kecamatan />
+                    </Route>
+                    <Route exact path="/kelurahan/:id">
+                        <Kelurahan />
                     </Route>
                 </Switch>
             </Router>

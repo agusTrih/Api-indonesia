@@ -1,6 +1,6 @@
 const GET_DATA_KELURAHAN = "GET_DATA_KELURAHAN";
 
-const getDataKeelurahan = (data) => {
+const getDataKelurahan = (data) => {
     return {
         type: GET_DATA_KELURAHAN,
         data,
@@ -22,4 +22,4 @@ const fetchDataKelurahan = (id) => async (dispatch) => {
     dispatch(getDataKelurahan(result));
 };
 
-export { getDataKeelurahan, fetchDataKelurahan, GET_DATA_KELURAHAN };
+export { getDataKelurahan, fetchDataKelurahan, GET_DATA_KELURAHAN };
